@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use Scalar::Util qw/looks_like_number/;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 $VERSION = eval $VERSION;
 
 require XSLoader;
@@ -130,7 +130,7 @@ In scalar context the result is returned, in list context the result and the sta
 
 =back
 
-=head1 INSTALLTION REQUIREMENTS
+=head1 INSTALLATION REQUIREMENTS
 
 This module needs the GSL library installed and available. The C<PERLGSL_LIBS> environment variable may be used to pass the C<--libs> linker flags; if this is not specified, the command C<gsl-config --libs> is executed to find them. Future plans include using an L<Alien> module to provide the GSL in a more CPAN-friendly manner.
 
